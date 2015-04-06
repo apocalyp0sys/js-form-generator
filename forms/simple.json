@@ -1,0 +1,34 @@
+{
+    "input1": {
+        "type": "input",
+        "title": "Первый инпут",
+        "path": "root.input",
+        "visible": true,
+        "disabled": false
+    },
+    "input2": {
+        "type": "input",
+        "title": "Второй инпут",
+        "path": "root.node1.node2.input",
+        "visible": true,
+        "disabled": true
+    },
+    "cb3": {
+        "type": "checkbox",
+        "title": "Чекбокс",
+        "path": "root.check",
+        "visible": true
+    },
+    "rad": {
+        "type": "radio",
+        "title": "радиобаттон",
+        "path": "root.rad",
+        "disabled": false
+    },
+    "shit": {
+        "type": "input",
+        "title": "Третий инпут",
+        "path": "root.third",
+        "disabled": false
+    }
+}

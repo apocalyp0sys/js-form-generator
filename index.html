@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/dataModel.js"></script>
+<script type="text/javascript" src="js/formBuilder.js"></script>
+
+<!-- Templates -->
+<script id="formbuilder-input-template" type="text/html">
+    <div>
+        <span>{{title}}:</span><input type="text" name="{{name}}" placeholder="{{placeholder}}">
+    </div>
+</script>
+<script id="formbuilder-checkbox-template" type="text/html">
+    <div>
+        <input type="checkbox" name="{{name}}"><span>{{title}}</span>
+    </div>
+</script>
+<script id="formbuilder-radio-template" type="text/html">
+    <div>
+        <input type="radio" name="{{name}}"><span>{{title}}</span>
+    </div>
+</script>
+
+
+<script type="text/javascript">
+    $(function() {
+        $.getJSON( "forms/simple.json", function( data ) {
+            formBuilder($('#form1-container'), data);
+        });
+        $.getJSON( "forms/second.json", function( data ) {
+            formBuilder($('#form2-container'), data);
+        });
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<title>Form Builder Sample</title>
+</head>
+<body>
+<div id="form1-container" class="form-container"></div>
+<div id="form2-container" class="form-container"></div>
+</body>
+</html>

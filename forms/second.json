@@ -1,0 +1,46 @@
+{
+    "order": ["smth", "fname", "surname", "patron", "radM", "radF"],
+    "fname": {
+        "type": "input",
+        "name": "fname",
+        "title": "Имя",
+        "placeholder": "(no Sync)",
+        "visible": true,
+        "disabled": false
+    },
+    "surname": {
+        "type": "input",
+        "name": "sur",
+        "title": "Фамилия",
+        "path": "root.second.input2",
+        "visible": true
+    },
+    "patron": {
+        "type": "input",
+        "name": "pat",
+        "title": "Отчество",
+        "path": "root.second.input3",
+        "visible": false
+    },
+    "radM": {
+        "type": "radio",
+        "title": "М",
+        "name": "rad",
+        "path": "root.second.isM",
+        "disabled": false
+    },
+    "radF": {
+        "type": "radio",
+        "name": "rad",
+        "title": "Ж",
+        "path": "root.second.isF",
+        "disabled": false
+    },
+    "smth": {
+        "type": "input",
+        "name": "smth",
+        "title": "Что-нибудь",
+        "path": "root.second.smth",
+        "disabled": false
+    }
+}
